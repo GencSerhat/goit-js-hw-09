@@ -8,8 +8,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 // linklerin tarayıcıda gözükebilmesi için  başındaki < > işaretlerini kaldırdım.
 const updateImages = images.map((image) => ({
   ...image, // ...image orjinal nesne özelliklerini korudum.
-  preview: image.preview.replace(/^<|>$/g, ""), // ^< < işaretinin başlangıçta olmasını |> > işaretin sonda olmasını hedefler.
-  original: image.original.replace(/^<|>$/g, ""), // g tüm eşleşmleri değiştirdim.
+  preview: image.preview.replace(/^<|>$/g, ""),
+  original: image.original.replace(/^<|>$/g, ""),
 }));
 
 const gallery = document.querySelector(".gallery");
