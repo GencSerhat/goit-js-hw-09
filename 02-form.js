@@ -1,0 +1,2 @@
+import"./assets/styles-DiaKYcO2.js";const e=document.querySelector(".feedback-form"),o="feedback-form-state";function s(a){a.preventDefault();const t={email:e.elements.email.value.trim(),message:e.elements.message.value.trim()},m=JSON.stringify(t);t.email!==""&&t.message!==""?(localStorage.setItem(o,m),e.reset(),window.location.href="feedback.html"):console.log("Email veya mesaj bölümünü boş bırakmayınız !")}e.addEventListener("submit",s);
+//# sourceMappingURL=02-form.js.map
